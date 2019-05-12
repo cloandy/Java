@@ -688,6 +688,7 @@ System.out.println(string + " a = " +a + " b = " +b);
   - `int array[]`
   - `int[] array`
   - 就是方括号的位置的不同
+  - `        int cnt[4] = {0}; `这样初始化是不对的
 
 - 定义一维数组：
 
@@ -1024,3 +1025,64 @@ System.out.println(string + " a = " +a + " b = " +b);
   - 在Java中提供了一个`finalize()`方法，这个方法是`Object`的方法，被声明为`protected`,如果用户定义了这个方法，在垃圾回收时会首先调用该方法，在下一次垃圾回收动作发生时，才能真正的回收被对象占用的内存。
   - 垃圾回收或者`finalized`并不能保证一定会发生，当JVM的内存耗尽时，它是不会执行垃圾回收的
   - 垃圾回收不受人为控制，具体的执行时间也不确定，所以`finalized`方法也就无法执行，为此Java提供了一种`System.gc()`方法来强制启动垃圾回收器。
+
+## 数字处理类
+
+### 数字格式化
+
+- 如果数据的绝对值大于0.01并且小于1000 0000，Java将用常规小数形式表示
+
+- 如果数据的绝对值小于0.01或者大于1000 0000，Java将用科学计数法来表示
+
+  ```java
+  import java.text.DecimalFormat;
+  
+  public class DecFormat{
+  
+      static public void SimpleFormat(String pattern, double value){
+          DecimalFormat myFormat = new DecimalFormat(pattern);
+          String output = myFormat.format(value);
+          System.out.print(value + " " + pattern + " " + output + "\n");
+      }
+      static public void UseApplySimpleFormat(String pattern, double value){
+          DecimalFormat myFormat = new DecimalFormat(pattern);
+          myFormat.applyPattern(pattern);
+  
+          System.out.print(value + " " + pattern + " " + myFormat.format(value) + "\n");
+      }
+  
+      public static void main(String[] args){
+          SimpleFormat("###,###.###",123456.789);
+          SimpleFormat("000000000.###Kg",123456.789);
+          UseApplySimpleFormat("#.###%",0.789);
+          UseApplySimpleFormat("###.##",123456.789);
+          UseApplySimpleFormat("0.00\u2030",0.789);
+      }
+  }
+  /**
+  123456.789 ###,###.### 123,456.789
+  123456.789 000000000.###Kg 000123456.789Kg
+  0.789 #.###% 78.9%
+  123456.789 ###.## 123456.79
+  0.789 0.00‰ 789.00‰
+  */
+  ```
+
+### 数学运算
+
+- 常见的各种数学运算
+- 各种极值运算
+
+## 随机数
+
+- `math.random()` 默认产生大于等于0.0小于1.0的double类型数字
+- `(int)math.random()*n`返回大与等于0小于n的随机整数
+- `(int)m +  (int)math.random()*n`返回大于等于m小于n的整形数字
+- 随机数类`Java.util.Random`
+
+## 大数字运算
+
+---
+
+- 基础知识完成，后续添加必要的知识
+
