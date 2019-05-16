@@ -1,3 +1,6 @@
+/**
+ * static 
+*/
 
 public class User2 {
     int id; // id

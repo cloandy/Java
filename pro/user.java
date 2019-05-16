@@ -1,3 +1,5 @@
+//构造方法
+
 public class user {
     int id; // id
     String name; // 账户名

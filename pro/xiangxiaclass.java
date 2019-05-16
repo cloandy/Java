@@ -1,3 +1,5 @@
+//向下转型
+
 class Quadrangle{
     public static void draw(Quadrangle q){
 

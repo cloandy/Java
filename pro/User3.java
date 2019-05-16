@@ -15,6 +15,9 @@ public class User3 {
         System.out.println(company);
     }  
     public static void main(String[] args) {
+        //进行类的初始化工作
         User3  u3 = null;
+        //new User3 创建对象
+        //()调用构造函数
     }
 }

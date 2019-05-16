@@ -2,10 +2,11 @@
 public class test1{
 
     public static void  testBasicType(int m){
-        System.out.println("testBasicType is m=" + m);
+        System.out.println("testBasicType is m=" + m);//50
         m = 100;
-        System.out.println("testBasicType is m=" + m);
+        System.out.println("testBasicType is m=" + m);//100
     }
+    
     public static void add(StringBuffer s) {  
   
         s.append("_add");  
@@ -23,7 +24,7 @@ public class test1{
   
         testBasicType(m);  
   
-        System.out.println("main is m = " + m);//i=50  
+        System.out.println("main is m = " + m);//i=50  验证Java的按值传递
   
         StringBuffer sMain = new StringBuffer("init");  
   
