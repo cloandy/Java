@@ -6,7 +6,7 @@ public class TestArray{
     public static void main(String[] args){
 
 
-        int[] array1;
+        int[] array1;  //对象引用类型，声明的时候并没有实例化任何对象，在栈中
         array1 = new int[10]; //默认初始化为0
         for(int x : array1)
             System.out.print(x + "\t");

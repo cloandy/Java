@@ -1,3 +1,6 @@
+/**
+ * 数组存储表格数据
+ */
 import java.util.Arrays;
 
 public class test2{

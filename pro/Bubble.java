@@ -45,5 +45,6 @@ public class Bubble{
 
         }
     }
+    //增加标志位的作用是减少外层循环数
 
 }
