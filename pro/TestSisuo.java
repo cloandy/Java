@@ -1,3 +1,6 @@
+/**
+ * 测试死锁问题
+ */
 class Lipstick{
 
 }
