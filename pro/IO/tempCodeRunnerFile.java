@@ -1,0 +1,2 @@
+
+            ffdst = new BufferedWriter(fdst);
