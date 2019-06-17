@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persons>
+	<person id="1">
+		<name> 至尊宝</name>
+		<age> 9000 </age>
+	</person>
+	
+	<person id="2">
+		<name> 白晶晶</name>
+		<age> 9000 </age>
+	</person>
+	
+</persons>

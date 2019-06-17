@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persons>
+	<person ID="1">
+    	<name>万维网</name>
+    	<age>99</age>
+  	</person>
+  	
+  	<person ID="2">
+    	<name>啊啊啊</name>
+    	<age>99</age>
+  	</person>
+</persons>

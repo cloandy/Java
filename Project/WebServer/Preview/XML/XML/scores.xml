@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE scores[
+	<!ELEMENT scores (student +)>
+	<!ELEMENT student (name, course, socre)>
+	<!ATTLIST student id CDATA #REQUIRED>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT course (#PCDATA)>
+	<!ELEMENT score (#PCDATA)>
+]>
+
+<scores>
+	<student id="1">
+		<name>王彤</name>
+		<course>Java</course>
+		<score>98</score>
+	</student>
+	
+	<student id="2">
+		<name>文档</name>
+		<course>Java</course>
+		<score>98</score>
+	</student>
+	
+	<student id="3">
+		<name>天天</name>
+		<course>Java</course>
+		<score>85</score>
+	</student>
+	
+</scores>
+
+<!-- 如果基本元素不加星号，则基本元素只能出现一次 -->
+<!-- 出现零次或者多次，添加星号 -->
+<!-- 出现零次或者一次，添加问号 -->

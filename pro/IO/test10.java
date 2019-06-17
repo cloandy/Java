@@ -1,4 +1,6 @@
-
+/**
+ * 序列化和反序列化
+ */
 import java.io.*;
 
 public class test10{

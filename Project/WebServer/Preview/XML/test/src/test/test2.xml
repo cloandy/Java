@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<scores>
+  <student ID="1">
+    <name>ss</name>
+    <course>JAVA</course>
+    <score>99</score>
+  </student>
+</scores>

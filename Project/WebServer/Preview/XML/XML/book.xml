@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--根元素-->
+<books>
+<!--图书信息-->
+    <!--属性-->
+	<book id = "bk101">
+        <!--元素：开始标签 元素内容 结束标签组成-->
+		<author>王珊</author>
+		<title>.NET高级编程</title>
+		<description>包含C#框架和网络编程灯</description>
+	</book>
+</books>
